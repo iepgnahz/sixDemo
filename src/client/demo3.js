@@ -4,8 +4,8 @@
 var request = require("superagent");
 request
   .post("http://127.0.0.1:2000/param/zhangpei")
-  .send({name:"mary"})
+  .send({name: "mary"})
   .type("form")
-  .end((err,res)=>{
+  .end((err, res)=> {
     console.log(res.text)
   });

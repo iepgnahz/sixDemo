@@ -4,7 +4,7 @@
 var request = require("superagent");
 request
   .post("http://127.0.0.1:2000/query")
-  .query({name:"andy"})
-  .end((err,res)=>{
+  .query({name: "andy"})
+  .end((err, res)=> {
     console.log(res.text)
   });
